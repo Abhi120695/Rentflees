@@ -79,7 +79,8 @@
         android:id="@+id/gridView"
         android:layout_below="@+id/view2"
         android:layout_alignParentStart="true"
-        android:layout_above="@+id/view4"/>
+        android:layout_above="@+id/view4"
+        android:stretchMode="columnWidth"/>
 
     <RadioGroup
         android:layout_width="match_parent"
