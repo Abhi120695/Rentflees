@@ -1,5 +1,7 @@
 package com.rentflees.rentflees.Dataholder_and_adapter;
 
+import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -9,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.rentflees.rentflees.R;
+import com.rentflees.rentflees.UI.Explordetail;
 
 import java.util.List;
 
@@ -17,9 +20,12 @@ import java.util.List;
  */
 public class houseadapter extends RecyclerView.Adapter<houseadapter.houseViewHolder> {
 
-  List<house_details.house> House;
+  List<house> House;
+    private static Context mContext;
 
-    public houseadapter(List<house_details.house> Houses) {
+    public houseadapter(List<house> Houses,Context context) {
+        this.mContext=context;
+
         this.House=Houses;
 
     }
@@ -39,7 +45,7 @@ public class houseadapter extends RecyclerView.Adapter<houseadapter.houseViewHol
         holder.Description.setText(House.get(position).description);
         holder.type.setText(House.get(position).type);
         holder.housePhoto.setImageResource(House.get(position).photoId);
-
+       holder.currenthouse=House.get(position);
 
 
     }
@@ -55,6 +61,7 @@ public class houseadapter extends RecyclerView.Adapter<houseadapter.houseViewHol
         TextView Price;
         ImageView housePhoto;
         TextView type;
+        public house currenthouse;
 
         houseViewHolder(View itemView) {
             super(itemView);
@@ -65,9 +72,22 @@ public class houseadapter extends RecyclerView.Adapter<houseadapter.houseViewHol
             Price = (TextView)itemView.findViewById(R.id.Price);
             type = (TextView)itemView.findViewById(R.id.type);
             housePhoto = (ImageView)itemView.findViewById(R.id.Housephoto);
+            cv.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent i = new Intent(mContext, Explordetail.class);
+                    i.putExtra("currenthouse",currenthouse);
+                    mContext.startActivity(i);
+
+
+                }
+            });
         }
 
     }
 
 
 }
+
+
+

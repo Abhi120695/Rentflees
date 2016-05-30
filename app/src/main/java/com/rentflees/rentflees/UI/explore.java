@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ToggleButton;
 
+import com.rentflees.rentflees.Dataholder_and_adapter.house;
 import com.rentflees.rentflees.Dataholder_and_adapter.house_details;
 import com.rentflees.rentflees.Dataholder_and_adapter.houseadapter;
 import com.rentflees.rentflees.R;
@@ -19,6 +20,7 @@ import java.util.List;
 
 public class explore extends AppCompatActivity {
     house_details h1;
+    List<house> mHouse;
     houseadapter hd;
     ToggleButton Wishbutton;
 
@@ -27,16 +29,17 @@ public class explore extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         h1=new house_details();
-        h1.initializeData(8);
+        mHouse =  h1.initializeData(8);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_explore);
         RecyclerView rv = (RecyclerView)findViewById(R.id.rv);
         rv.setHasFixedSize(true);
         LinearLayoutManager llm = new LinearLayoutManager(this);
         rv.setLayoutManager(llm);
-       hd = new houseadapter(h1.getHouse());
+       hd = new houseadapter(mHouse,this);
         Log.v("test1", Integer.toString(h1.getHouse().size()));
         rv.setAdapter(hd);
+
     }
 
     public void addremovewishlist(View view) {
@@ -52,4 +55,5 @@ public class explore extends AppCompatActivity {
        // Wishbutton.setImageResource();
 
     }
+
 }

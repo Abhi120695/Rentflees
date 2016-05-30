@@ -80,7 +80,9 @@
         android:layout_below="@+id/view2"
         android:layout_alignParentStart="true"
         android:layout_above="@+id/view4"
-        android:stretchMode="columnWidth"/>
+        android:stretchMode="columnWidth"
+        android:numColumns="2"
+        />
 
     <RadioGroup
         android:layout_width="match_parent"
@@ -88,7 +90,30 @@
         android:layout_alignParentStart="true"
         android:layout_above="@+id/view5"
         android:layout_below="@+id/gridView"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Room"
+            android:id="@+id/Room"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bed"
+            android:id="@+id/Bed"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="House"
+            android:id="@+id/House"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"/>
     </RadioGroup>
 
     <TextView
@@ -115,7 +140,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Large Text"
-        android:id="@+id/textView2"
+        android:id="@+id/Rent"
         android:layout_below="@+id/textView5"
         android:layout_marginLeft="50dp"
        />
@@ -125,9 +150,9 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Large Text"
-        android:id="@+id/textView3"
+        android:id="@+id/Security"
 
-        android:layout_alignTop="@+id/textView2"
+        android:layout_alignTop="@+id/Rent"
         android:layout_alignEnd="@+id/textView6"/>
 
 </RelativeLayout>

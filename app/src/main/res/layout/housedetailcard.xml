@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="DETAILS"
+        android:id="@+id/Details"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Size"
+        android:id="@+id/textView2"
+        android:layout_marginTop="54dp"
+        android:layout_below="@+id/Details"
+        android:layout_alignParentStart="true"/>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#d7d7d7"
+        android:id="@+id/view5"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true">
+    </View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/size"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="House id"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/view5"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/houseid"
+        android:layout_alignTop="@+id/view5"
+        android:layout_alignStart="@+id/size"
+        android:layout_marginTop="15dp"/>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#d7d7d7"
+        android:id="@+id/view4"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true">
+    </View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type"
+        android:id="@+id/textView8"
+        android:layout_below="@+id/view4"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/type"
+        android:layout_below="@+id/view4"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"/>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#d7d7d7"
+        android:id="@+id/view3"
+        android:layout_below="@+id/textView8"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp">
+    </View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Only for"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/view3"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/Onlyfor"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignEnd="@+id/type"/>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#d7d7d7"
+        android:id="@+id/view2"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true">
+    </View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bedrooms"
+        android:id="@+id/textView9"
+        android:layout_below="@+id/view2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/Beedroom"
+        android:layout_below="@+id/view2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"/>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#d7d7d7"
+        android:id="@+id/view"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/textView9"
+        android:layout_alignEnd="@+id/Beedroom">
+    </View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food prefrences"
+        android:id="@+id/textView11"
+        android:layout_below="@+id/view"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"/>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#d7d7d7"
+        android:id="@+id/view6"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/textView11"
+        android:layout_alignParentStart="true">
+    </View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="House Address"
+        android:id="@+id/textView12"
+        android:layout_below="@+id/view6"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"/>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#d7d7d7"
+        android:id="@+id/view7"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/textView12"
+        android:layout_alignParentStart="true">
+    </View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rules"
+        android:id="@+id/textView13"
+        android:layout_below="@+id/view7"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"/>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#d7d7d7"
+        android:id="@+id/view8"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/textView13"
+        android:layout_alignEnd="@+id/Beedroom">
+    </View>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="View"
+        android:id="@+id/button"
+        android:layout_alignTop="@+id/textView13"
+        android:layout_alignEnd="@+id/Beedroom"
+        android:background="#f9f9f9"
+        android:textColor="#f78d8d"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="View"
+        android:id="@+id/button2"
+        android:background="#f9f9f9"
+        android:textColor="#f78d8d"
+        android:layout_below="@+id/view6"
+        android:layout_alignStart="@+id/button"
+        android:layout_marginTop="14dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/Food"
+        android:layout_below="@+id/view"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"/>
+
+</RelativeLayout>
