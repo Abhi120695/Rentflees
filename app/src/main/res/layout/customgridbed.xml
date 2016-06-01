@@ -2,6 +2,25 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="25dp"
+        android:text="New Text"
+        android:id="@+id/Roomno"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:textSize="15sp"
+        android:paddingLeft="20dp"/>
+
+    <GridView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:id="@+id/bedgrid"
+        android:layout_below="@+id/Roomno"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        />
 
 
 </RelativeLayout>

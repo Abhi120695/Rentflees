@@ -24,7 +24,9 @@
             android:name=".UI.explore"
             android:parentActivityName=".UI.Navigation">
         </activity>
-        <activity android:name=".UI.Explordetail">
+        <activity android:name=".UI.Explordetail"
+                  android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".UI.explore">
         </activity>
         <activity android:name=".UI.Set_location">
         </activity>

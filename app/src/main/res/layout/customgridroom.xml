@@ -16,8 +16,8 @@
         android:paddingLeft="20dp"/>
 
     <ImageButton
-        android:layout_width="50dp"
-        android:layout_height="100dp"
+        android:layout_width="30dp"
+        android:layout_height="60dp"
         android:id="@+id/Roomimage"
         android:scaleType="fitXY"
         android:src="@drawable/door1"

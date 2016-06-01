@@ -1,13 +1,12 @@
 package com.rentflees.rentflees.Dataholder_and_adapter;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.GridView;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.rentflees.rentflees.R;
@@ -15,14 +14,14 @@ import com.rentflees.rentflees.R;
 import java.util.ArrayList;
 
 /**
- * Created by Abhishek-Pc on 28-05-2016.
+ * Created by Abhishek-Pc on 01-06-2016.
  */
-
-public class gridadapter extends BaseAdapter {
+public class gridbedsadpter extends BaseAdapter{
     private Context mContext;
     private ArrayList<Integer> mHouse;
+    gridbedadapter mGridbedadapter;
 
-    public gridadapter(Context context, ArrayList<Integer> mhouse){
+    public gridbedsadpter(Context context, ArrayList<Integer> mhouse){
         mHouse=mhouse;
         mContext=context;
     }
@@ -55,14 +54,18 @@ public class gridadapter extends BaseAdapter {
 
 
             gridView = new View(mContext);
-            gridView = inflater.inflate(R.layout.customgridroom, null);
+            gridView = inflater.inflate(R.layout.customgridbed, null);
+            GridView bedgrid = (GridView) gridView.findViewById(R.id.bedgrid);
+            bedgrid.setNumColumns(2);
+            mGridbedadapter=new gridbedadapter(mContext,mHouse);
+            bedgrid.setAdapter(mGridbedadapter);
 
-            ImageButton mImageButton = (ImageButton) gridView.findViewById(R.id.Roomimage);
+
             TextView Roomtextview = (TextView) gridView.findViewById(R.id.Roomno);
             int  position2=position+ 1;
             Roomtextview.setText("Room "+ position2);
-            mImageButton.setImageResource(R.drawable.door1);
-           // convertView.setTag(holder);
+           // mImageButton.setImageResource(R.drawable.bed);
+            // convertView.setTag(holder);
 
         }
         else {
@@ -72,6 +75,5 @@ public class gridadapter extends BaseAdapter {
         }
 
         return gridView;
+    }
 }
-}
-

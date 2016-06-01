@@ -11,11 +11,10 @@ public class house implements Serializable{
     public String Rent;
     public String BHK;
     public String type;
-        int photoId;
-
-       String Deposit;
-        Boolean Wish=false;
-        String description;
+    int photoId;
+    String Deposit;
+    Boolean Wish=false;
+    String description;
 
         house(String name, String Rent,String BHK,String Deposit, String Description,String type,int photoId) {
             this.Housename = name;

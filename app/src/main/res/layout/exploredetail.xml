@@ -74,10 +74,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="500dp"
                 layout="@layout/appartmentdetailcard"
+                android:layout_centerHorizontal="true"
                 android:id="@+id/inlude1"
 
-                android:layout_alignParentTop="true"
-                android:layout_alignEnd="@+id/Book"/>
+                android:layout_marginTop="5dp"/>
             <include
                 android:layout_width="wrap_content"
                 android:layout_height="160dp"
@@ -103,7 +103,6 @@
                 android:layout_below="@id/inlude3"
                 android:layout_marginTop="10dp"/>
 
-
         </RelativeLayout>
     </android.support.v4.widget.NestedScrollView>
 
@@ -115,28 +114,5 @@
         android:src="@android:drawable/ic_dialog_email"
         app:layout_anchor="@id/appbar"
         app:layout_anchorGravity="bottom|end" />
-    <Button
-        android:layout_width="192dp"
-        android:layout_height="wrap_content"
-        android:text="Schedule a Visit"
-        android:id="@+id/Schedule"
-        android:background="#fd4080"
-
-
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="525dp"
-        />
-
-    <Button
-        android:layout_width="192dp"
-        android:layout_height="wrap_content"
-        android:text="Book"
-        android:id="@+id/Book"
-        android:background="#fd4080"
-        android:layout_alignTop="@+id/Schedule"
-        android:layout_toEndOf="@+id/Schedule"
-        android:layout_marginTop="525dp"
-        android:layout_marginLeft="195dp"/>
-
 
 </android.support.design.widget.CoordinatorLayout>
