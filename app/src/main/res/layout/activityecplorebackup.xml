@@ -1,20 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
-
-
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
                                                  xmlns:app="http://schemas.android.com/apk/res-auto"
                                                  xmlns:tools="http://schemas.android.com/tools"
                                                  android:layout_width="match_parent"
                                                  android:layout_height="match_parent"
                                                  android:fitsSystemWindows="true"
-                                                 tools:context="com.rentflees.rentflees.UI.Explordetail"
-    android:id="@+id/cd">
+                                                 tools:context="com.rentflees.rentflees.UI.Explordetail">
+
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"
@@ -51,11 +43,12 @@
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        android:id="@+id/rv2"
-        android:layout_below="@+id/appbar"
+        android:layout_height="wrap_content"
         tools:context="com.rentflees.rentflees.UI.Explordetail"
+        android:id="@+id/rv2"
+        android:layout_marginTop="240dp"
+
+
         />
 
     <android.support.design.widget.FloatingActionButton
@@ -63,41 +56,31 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/fab_margin"
-        android:src="@android:drawable/star_big_off"
+        android:src="@android:drawable/ic_dialog_email"
         app:layout_anchor="@id/appbar"
-        app:layout_anchorGravity="bottom|end"
+        app:layout_anchorGravity="bottom|end" />
+    <Button
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:text="Schedule a Visit"
+        android:id="@+id/Schedule"
+        android:background="#fd4080"
+
+
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="525dp"
         />
 
+    <Button
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:text="Book"
+        android:id="@+id/Book"
+        android:background="#fd4080"
+        android:layout_alignTop="@+id/Schedule"
+        android:layout_toEndOf="@+id/Schedule"
+        android:layout_marginTop="525dp"
+        android:layout_marginLeft="195dp"/>
 
 
 </android.support.design.widget.CoordinatorLayout>
-<Button
-android:layout_width="192dp"
-android:layout_height="wrap_content"
-android:text="Schedule a Visit"
-android:id="@+id/Schedule"
-android:background="#fd4080"
-
-
-
-android:layout_alignParentStart="true"
-android:layout_alignParentBottom="true"
-    />
-
-<Button
-    android:layout_width="192dp"
-    android:layout_height="wrap_content"
-    android:text="Book"
-    android:id="@+id/Book"
-    android:layout_below="@+id/cd"
-    android:background="#fd4080"
-    android:layout_alignTop="@+id/Schedule"
-    android:layout_toEndOf="@+id/Schedule"
-    android:layout_alignParentBottom="true"
-
-    />
-</RelativeLayout>
-
-
-
-

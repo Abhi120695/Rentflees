@@ -9,4 +9,6 @@
     <string name="blank"/>
     <string name="depsit">SECURITY DEPOSIT</string>
     <string name="rent">RENT FROM</string>
+    <string name="title_activity_society">Society</string>
+    <string name="title_activity_feedback">feedback</string>
 </resources>

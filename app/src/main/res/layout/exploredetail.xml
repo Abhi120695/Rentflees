@@ -1,118 +1,66 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
-                                                 xmlns:tools="http://schemas.android.com/tools"
-                                                 android:layout_width="match_parent"
-                                                 android:layout_height="match_parent"
-                                                 android:fitsSystemWindows="true"
-                                                 tools:context="com.rentflees.rentflees.UI.Explordetail">
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.rentflees.rentflees.UI.Explordetail"
+    >
 
-    <android.support.design.widget.AppBarLayout
-        android:id="@+id/appbar"
-        android:layout_width="match_parent"
-        android:layout_height="240dp"
-        android:fitsSystemWindows="true"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
-        <android.support.design.widget.CollapsingToolbarLayout
-            android:id="@+id/collapsing_toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:fitsSystemWindows="true"
-            app:contentScrim="?attr/colorPrimary"
-            app:expandedTitleMarginEnd="64dp"
-            app:expandedTitleMarginStart="48dp"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed">
-            <ImageView
-                android:id="@+id/backdrop"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fitsSystemWindows="true"
-                android:scaleType="centerCrop"
-                android:src="@drawable/house3"
-                app:layout_collapseMode="parallax" />
-            <android.support.v7.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                app:layout_collapseMode="pin"
-                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
-        </android.support.design.widget.CollapsingToolbarLayout>
-    </android.support.design.widget.AppBarLayout>
-
-
-    <android.support.v4.widget.NestedScrollView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:context="com.rentflees.rentflees.UI.Explordetail"
         >
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            >
-
-            <!--  <ImageView
-                   android:layout_width="385dp"
-                   android:layout_height="170dp"
-                   android:id="@+id/imageView2"
-                   android:layout_alignParentTop="true"
-                   android:layout_alignParentStart="true"
-                   android:layout_marginLeft="-16dp"
-                   android:layout_marginTop="-16dp"
-                   android:layout_marginRight="-16dp"
-                   android:src="@drawable/house3"
-                   android:scaleType="fitXY"/>
-                   -->
+        <!--  <ImageView
+               android:layout_width="385dp"
+               android:layout_height="170dp"
+               android:id="@+id/imageView2"
+               android:layout_alignParentTop="true"
+               android:layout_alignParentStart="true"
+               android:layout_marginLeft="-16dp"
+               android:layout_marginTop="-16dp"
+               android:layout_marginRight="-16dp"
+               android:src="@drawable/house3"
+               android:scaleType="fitXY"/>
+               -->
 
 
 
-            <include
-                android:layout_width="wrap_content"
-                android:layout_height="500dp"
-                layout="@layout/appartmentdetailcard"
-                android:layout_centerHorizontal="true"
-                android:id="@+id/inlude1"
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="500dp"
+            layout="@layout/appartmentdetailcard"
+            android:id="@+id/inlude1"
 
-                android:layout_marginTop="5dp"/>
-            <include
-                android:layout_width="wrap_content"
-                android:layout_height="160dp"
-                layout="@layout/homeamentiesview"
-                android:layout_centerHorizontal="true"
-                android:id="@+id/inlude2"
-                android:layout_below="@id/inlude1"
-                android:layout_marginTop="10dp"/>
-            <include
-                android:layout_width="wrap_content"
-                android:layout_height="160dp"
-                layout="@layout/societyamentiesview"
-                android:layout_centerHorizontal="true"
-                android:id="@+id/inlude3"
-                android:layout_below="@id/inlude2"
-                android:layout_marginTop="10dp"/>
-            <include
-                android:layout_width="wrap_content"
-                android:layout_height="500dp"
-                layout="@layout/housedetailcard"
-                android:layout_centerHorizontal="true"
-                android:id="@+id/inlude4"
-                android:layout_below="@id/inlude3"
-                android:layout_marginTop="10dp"/>
+            android:layout_alignParentTop="true"
+            />
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            layout="@layout/homeamentiesview"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/inlude2"
+            android:layout_below="@id/inlude1"
+            android:layout_marginTop="10dp"/>
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            layout="@layout/societyamentiesview"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/inlude3"
+            android:layout_below="@id/inlude2"
+            android:layout_marginTop="10dp"/>
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="500dp"
+            layout="@layout/housedetailcard"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/inlude4"
+            android:layout_below="@id/inlude3"
+            android:layout_marginTop="10dp"/>
 
-        </RelativeLayout>
-    </android.support.v4.widget.NestedScrollView>
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/fab_margin"
-        android:src="@android:drawable/ic_dialog_email"
-        app:layout_anchor="@id/appbar"
-        app:layout_anchorGravity="bottom|end" />
-
-</android.support.design.widget.CoordinatorLayout>
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

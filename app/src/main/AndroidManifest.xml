@@ -24,11 +24,30 @@
             android:name=".UI.explore"
             android:parentActivityName=".UI.Navigation">
         </activity>
-        <activity android:name=".UI.Explordetail"
-                  android:theme="@style/AppTheme.NoActionBar"
-            android:parentActivityName=".UI.explore">
+        <activity
+            android:name=".UI.Explordetail"
+            android:parentActivityName=".UI.explore"
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity android:name=".UI.Set_location">
+        </activity>
+        <activity android:name=".UI.homeamenities">
+        </activity>
+        <activity
+            android:name=".UI.Society"
+            android:label="@string/title_activity_society"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".UI.schedule">
+        </activity>
+        <activity android:name=".UI.wishlist">
+        </activity>
+        <activity android:name=".UI.postyourrequorment">
+        </activity>
+        <activity
+            android:name=".UI.feedback"
+            android:label="@string/title_activity_feedback"
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
     </application>
 

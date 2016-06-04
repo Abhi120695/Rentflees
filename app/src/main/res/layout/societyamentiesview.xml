@@ -6,7 +6,7 @@
                 android:layout_height="match_parent">
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="170dp"
         app:cardUseCompatPadding="true"
         android:id="@+id/view9">
         <RelativeLayout
@@ -25,18 +25,19 @@
 
         <GridView
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:id="@+id/homeamgrid"
+            android:layout_height="75dp"
+            android:id="@+id/societygrid"
             android:layout_below="@+id/textView7"
             >
         </GridView>
             <Button
                 android:layout_width="wrap_content"
-                android:layout_height="60dp"
+                android:layout_height="50dp"
                 android:text="Viewall"
-                android:id="@+id/button3"
-                android:layout_below="@id/homeamgrid"
-                android:layout_centerHorizontal="true"/>
+                android:id="@+id/societyviewallamenties"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/societygrid"/>
         </RelativeLayout>
     </android.support.v7.widget.CardView>
 
